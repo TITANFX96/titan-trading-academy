@@ -1,0 +1,257 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #b0b0b0; /* Light silver text for general content */
+    background-color: #000000; /* Solid black background */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: url('images/webpage bacrground.jpg'); /* Adjusted image path */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    height: 500px; /* Set the desired height for your header */
+    color: white; /* Change text color for better contrast */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    position: relative; /* Ensure it can be positioned above the background */
+    z-index: 1; /* Bring header in front of other content */
+    padding: 3rem 1rem; /* Move padding to this block */
+}
+
+header h1 {
+    color: #C0C0C0; /* Sharp metallic silver */
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    display: block; /* Stack "Titan", "Trading", and "Academy" on separate lines */
+}
+
+/* Metallic Effect */
+header h1 {
+    color: #C0C0C0;
+    background: linear-gradient(90deg, #E5E4E2, #A9A9A9, #E5E4E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+header nav ul li a {
+    color: #b0b0b0;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+    color: #E5E4E2; /* Lighter metallic color on hover */
+}
+
+/* Hero Section */
+#hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #E5E4E2;
+}
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #E5E4E2;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.cta-button:hover {
+    background: #A9A9A9; /* Darker metallic silver on hover */
+    color: #ffffff;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+section h2 {
+    color: #C0C0C0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b0b0b0;
+}
+
+.hero-image {
+    max-width: 30%; /* Ensures the image doesn't exceed the width of its container */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block; /* Treats the image as a block element */
+    margin: 2px auto; /* Centers the image and adds some top/bottom margin */
+}
+
+/* CEO Button Styling */
+.ceo-btn {
+    background-color: transparent; /* No background for the button */
+    color: #C0C0C0; /* Metallic silver text color */
+    font-size:1.3rem; /* Slightly smaller than the main header */
+    font-weight: bold; /* Keep it bold */
+    letter-spacing: 0.05em; /* Maintain letter spacing */
+    text-transform: uppercase; /* Uppercase text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    padding: 10px 20px; /* Padding for aesthetics */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.ceo-btn:hover {
+    color: white; /* Change text color on hover for better visibility */
+}
+
+/* Services Section */
+#services .service {
+    background-color: #1a1a1a; /* Dark gray box background */
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    color: #E5E4E2;
+}
+
+#services .service:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+}
+
+#services h3 {
+    color: #E5E4E2;
+    margin-bottom: 0.5rem;
+}
+
+/* Accordion styles */
+.accordion-button {
+    background-color: #1a1a1a; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding around button */
+    border: none; /* Remove default border */
+    text-align: center; /* Align text to the center */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Cursor change on hover */
+    transition: background-color 0.3s; /* Transition for background color */
+    width: 100%; /* Make button take full width */
+}
+
+.accordion-button:hover {
+    background-color: #555; /* Change color on hover */
+}
+
+.accordion-content {
+    display: none; /* Hide content by default */
+    padding: 10px; /* Padding around content */
+    background-color: #f1f1f1; /* Background color for content */
+    border-radius: 8px; /* Rounded corners for the content */
+    color: #333; /* Text color for the content */
+}
+
+/* Contact Section */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+#contact label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #E5E4E2;
+}
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background-color: #E5E4E2;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+#contact button:hover {
+    background-color: #A9A9A9;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    #services .service {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+}
