@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-color: #f4f4f4; /* Optional: set a background color for the body */
+}
+
+header {
+    background-color: #333; /* Dark grey */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Position relative for merging effects */
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.full-page {
+    width: 100%;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    padding-top: 20px; /* Add top padding to separate from the header */
+}
+
+.full-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Maintain aspect ratio and cover the section */
+    margin: 0; /* No margin */
+}
+
+h2 {
+    color: #333; /* Match the header color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Space above and below the header text */
+    background-color: #333; /* Dark grey background for subheaders */
+    color: white; /* White text color for subheaders */
+    width: 100%; /* Full width for the subheaders */
+    text-align: center; /* Center align the text */
+}
+
+footer {
+    text-align: center;
+    padding: 10px; /* Adjusted padding */
+    background-color: #333; /* Match footer color with header */
+    color: white;
+    margin-top: -10px; /* Pull footer up to merge with last image */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the social links */
+    margin-top: 20px; /* Add space above the social links */
+}
+
+.social-link {
+    margin: 0 10px; /* Space between the links */
+    padding: 10px 15px; /* Padding around the links */
+    color: white; /* Text color */
+    background-color: #0077cc; /* Button background color (blue) */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.social-link:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+}
